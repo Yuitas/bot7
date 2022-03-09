@@ -198,3 +198,6 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 client.login(process.env.VINTED_BOT_TOKEN);
+process.on('uncaughtException', function (err) {
+    console.log(err);
+});
